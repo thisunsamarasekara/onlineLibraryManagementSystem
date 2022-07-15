@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<!--link login styles sheet!-->
+<link rel="stylesheet" href="../css/loginStyles.css" />
+
+<!--link footer styles sheet!-->
+<link rel="stylesheet" href="../css/styles_footer.css" />
+
+<!--link image logo!-->
+<link rel="icon" href="../images/logo_icon.png" type="image/x-icon">
+
+<title>Login</title>
+
+<h1 class="headers">Admin Login</h1>
+									
+<meta name="viewpoint" content="width=device-width, intial-scale=1.0">
+</head>
+
+<body>
+<!--go back!-->
+<img src="../images/back.png" class="backImg" onclick="location.href='../php/login.php'"">
+<input type="button" value="Go back" class="back" onclick="location.href='../php/login.php'"">
+<br><br><br><br>
+
+<div class = "div_form">
+
+<form action = "../php/login_admin.php" method = "POST">
+
+<!--heading!-->
+<h1 class="header1">ADMIN LOGIN</h1>
+<img src = '../images/admin.png' class = "icon2" >
+
+<!--E-mail!-->
+<label class="label" for="username">Username</label><br></br>
+<input type = "text" id = "username" name = "username" placeholder="Username">
+<br><br>
+
+<!--Password!-->
+<label class="label" for="psw">Password</label><br><br>
+<input type="password" id="psw" name="psw" placeholder="Password">
+
+<!--Forgot Password!-->
+
+<br><br>
+
+<!--login button!-->
+<button type="Submit" id="login" value = "Submit">Login</button>
+
+
+<br>
+
+</form>
+
+</div>
+<br><br><br><br>
+
+<!--link login java script sheet!-->
+<script src="../js/loginScript.js"></script>
+
+<!--copyright footer!-->
+<div class="footer">
+	<p  style = "padding-top:30px" class = "cpy">Copyright©2020</p>
+	<img src  = "../images/whatsapp_icon.png" class = "whatsapp_icon">
+	<img src  = "../images/facebook_icon.png" class = "facebook_icon">
+</div>
+
+</body>
+</html>

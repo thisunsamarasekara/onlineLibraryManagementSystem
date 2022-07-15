@@ -1,0 +1,141 @@
+/* Created by P.M.J.I.Karunarathna IT20235192 */
+
+body{
+	background-color:#f0f2f5;
+}
+
+.headers
+{
+	text-align: center;
+	font-size:25px;
+	font-family:copperplate,"Copperplate Gothic Light";
+	color:white;
+	background-image: url("../images/bg.jpg");
+	padding:30px;
+	height:50px;
+	width:100%;
+	margin-top:-15px;
+	margin-left:-15px;
+}
+
+.header1
+{
+	text-align: center;
+	font-size:25px;
+	font-family:copperplate,"Copperplate Gothic Light";
+}
+
+.back
+{
+	border:none;
+	background-color:none;
+}
+
+.backImg
+{
+	margin-left: 10px;
+	margin-top:5px;
+	width: 0.5%;
+}
+
+.div_form {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  border: none;
+  padding: 20px;
+  margin: auto;
+  background-color:white;
+  box-shadow: 0px 8px 15px 0px black;
+  border-radius: 20px;
+}
+
+.label
+{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+#email
+{
+	display: block;
+	width: 90%;
+	height:20px;
+	border-radius: 5px;
+}
+
+#username
+{
+	display: block;
+	width: 90%;
+	height:20px;
+	border-radius: 5px;
+}
+
+#psw
+{
+	display: block;
+	width: 90%;
+	height:20px;
+	border-radius: 5px;
+}
+
+#fp
+{
+	text-align:right;
+	margin-right: 20px;
+}
+
+a:hover
+{
+	font-size:15px;
+	color:#003366;
+}
+
+#login
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:130px;
+  height:30px;
+  background-color:#48a850;
+  border-radius: 3px;
+}
+
+
+
+.para
+{
+	text-align:center;
+}
+
+.icon
+{
+	height:40px;
+	text-decoration:none;
+	float:right;
+	margin-top:-90px;
+	margin-right:20px;
+	filter: brightness(0) invert(1);
+}
+
+.icon2
+{
+	height:40px;
+	text-decoration:none;
+	float:left;
+	margin-top:-55px;
+	margin-left:10px;
+	
+}
+
+.error{
+	text-align:center;
+	color:red;
+	animation: fade 6s;
+    opacity: 0;
+}
+
+@keyframes fade {
+  0% { opacity: 1; }
+}

@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<!--link register style sheet!-->
+<link rel="stylesheet" href="../css/add_book.css" />
+
+<!--link footer style sheet!-->
+<link rel="stylesheet" href="../css/styles_footer.css" />
+
+<!--link image logo!-->
+<link rel="icon" href="../images/logo_icon.png" type="image/x-icon">
+
+<title>Add Book</title>
+
+<meta name="viewpoint" content="width=device-width, intial-scale=1.0">
+
+<!--header!-->
+<h1 class="headers">Add Book</h1>
+
+</head>
+
+<body>
+
+
+<!--go back!-->
+<img src="../images/back.png" class="backImg" onclick="location.href = '../php/admin.php';">
+<input type="button" value="Go back" class="back" onclick="location.href = '../php/admin.php';">
+
+
+<br><br><br><br>
+
+
+
+<script>
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
+</script>
+
+<div class="div_form">
+
+	<!--heading!-->
+	<h1 class="header1">ADD BOOK</h1><br><br>
+
+	<!--form!-->
+	<form method="POST" action="../php/addbook.php" enctype='multipart/form-data'>
+	
+	<!--image!-->
+	<p><input type="file"  accept="image/*" name="image" id ="file" onchange="loadFile(event)" style="display: none;"></p>
+	<p><img id="output" width="200" /></p>
+	<p><label for="file" class = "upload">Upload Image</label></p>
+	
+
+	<!--name!-->
+	<label class="label" for = "bname">Book Name</label><br><br>
+	<input type = "text" id = "bname" name = "bname" placeholder="Book name..." required><br><br>
+
+	<!--Author!-->
+	<label class="label" for = "author">Author</label><br><br>
+	<input type = "text" id = "author" name = "author" placeholder="Author..." required><br><br>
+
+
+	<!--Publisher!-->
+	<label class="label" for = "publisher">Publisher</label><br><br>
+	<input type = "text" id = "publisher" name = "publisher" placeholder="Publisher..." required><br><br>
+	
+	<!--Category!-->
+	<label class="label" for="category">Category</label><br><br>
+	<select name = "category" id="category">
+	  <option value="Fantasy">Fantasy</option>
+	  <option value="Comedy">Comedy</option>
+	  <option value="Adventure">Adventure</option>
+	  <option value="Science">Science</option>
+	  <option value="History">History</option>
+	  <option value="IT">IT</option>
+	</select><br><br>
+	
+	<!--Description!-->
+	<label class="label" for = "description">Description</label><br><br>
+	<textarea id="description" name="description" rows="50" cols="50" placeholder="Description..."></textarea><br><br>
+
+
+
+	<button type="submit" class="addbook" name="addbook">Add Book</button>
+
+	</form>
+</div>
+<br><br><br><br>
+
+
+<!--copyright footer!-->
+<div class="footer">
+	<p  style = "padding-top:30px" class = "cpy">Copyright©2020</p>
+	<img src  = "../images/whatsapp_icon.png" class = "whatsapp_icon" >
+	<img src  = "../images/facebook_icon.png" class = "facebook_icon">
+</div>
+
+</body>
+</html>

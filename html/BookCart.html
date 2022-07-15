@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Book cart</title>
+	
+	<!-- icon  -->
+	<link rel = "icon" href = "images/logo_icon.png" type = "image/x-icon"> 
+	
+	<!-- styles header  -->
+	<link rel="stylesheet" href="../css/styles_header.css">
+	
+	<!-- styles footer  -->
+	<link rel="stylesheet" href="../css/styles_footer.css">
+	
+	<!-- styles home  -->
+	<link rel="stylesheet" href="../css/styles_home.css">
+	
+	<!-- styles body  -->
+	<link rel="stylesheet" href="../css/book_cart.css">
+	
+	<!-- viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 
+</head>
+
+<body>
+
+	<script>
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
+</script>
+
+
+<div class = "header">
+
+
+<!--form!-->
+	<form method="POST" action="../php/bookcart.php" enctype='multipart/form-data'>
+
+
+	<!-- logo -->
+	<div class = "logo">
+		<img src = "../images/logo.png" alt = "Logo" >
+	</div>
+
+	<!-- navigation bar -->
+	<div class = "nav_all">
+		<div class = "nav_bar">
+			<ul id = "menuItems" class = "nav">
+			  <li><a href="../php/home.php">Home</a></li>
+			  <li><a href="../php/login.php">Login</a></li>
+			  <li><a href="../php/search_books.php">Explore</a></li>
+			  <li><a class = "current" href="#">Bookcart</a></li>
+			  <li><a href="../php/member.php">Account</a></li>
+			</ul>
+		</div>
+		
+		<!-- navigation bar 2 -->
+		<div class = "nav_bar">
+			<ul id = "menu" class = "nav2">
+			  <li><a href= "../php/home.php">Home</a></li>
+			  <li><a href="../php/login.php">Login</a></li>
+			  <li><a href="../php/search_books.php">Explore</a></li>
+			</ul>
+		</div>
+		
+		
+		
+		
+		<!-- navigation bookcart buttons -->
+		<div class = "nav_bar_btn">
+			<button class = "bkcart" ></button>
+			
+			<span style = "margin-left:20px" ></span>
+			
+			<!-- navigation account buttons -->
+			<button class = "acc" onclick="location.href = '../php/member.php';" ></button>
+		</div>
+		
+		<!-- navigation menu -->
+		<img src  = "../images/menu.png" class = "menu" onclick = "menutoggle()" >
+		
+	</div>
+</div>
+
+	<!-- js -->
+	<script src="js/header.js"></script>
+	
+	<br><br><br>	<br><br><br>	<br><br><br>
+<div class = "rb">
+	<h1>Reserved Book</h1>
+ <br>
+	<div class="img">
+	<img src ="../images/books/1.jpg" alt="book image" width="100px" height="120px">
+	<img src ="../images/books/2.jpg" alt="book image" width="100px" height="120px" class="img1">
+	<img src ="../images/books/3.jpg" alt="book image" width="100px" height="120px" class="img1"><br>
+    <br></div>
+</div> <br>
+<div class = "rb">
+	<h1>Borrowed Book</h1>
+ <br>
+    
+<div class="img">
+	<img src ="../images/books/5.jpg" alt="book image" width="100px" height="120px">
+	<img src ="../images/books/6.jpg" alt="book image" width="100px" height="120px" class="img1">
+	<img src ="../images/books/8.jpg" alt="book image" width="100px" height="120px" class="img1"><br>
+    <br></div>
+</div>
+	
+	<br><br>
+
+	<!-- footer -->
+	<div class="footer">
+		<br>
+		<p class = "cpy">Copyright©2020</p>
+		<img src  = "../images/whatsapp_icon.png" class = "whatsapp_icon">
+		<img src  = "../images/facebook_icon.png" class = "facebook_icon" onclick="location.href = 'https://www.facebook.com/';">
+	</div>
+
+
+	
+	
+	
+
+</body>
+
+</html>

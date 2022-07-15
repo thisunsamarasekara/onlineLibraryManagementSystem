@@ -1,0 +1,140 @@
+/* Created by Bawantha chamika */
+/* IT20087456 */
+
+body{
+	background-color:#f0f2f5;
+}
+
+.headers
+{
+	text-align: center;
+	font-size:25px;
+	font-family:copperplate,"Copperplate Gothic Light";
+	color:white;
+	background-image: url("../images/bg.jpg");
+	margin-top:-15px;
+	margin-left:-15px;
+	padding:30px;
+	height:50px;
+	width:100%;
+}
+
+.header1
+{
+	text-align: center;
+	font-size:25px;
+	font-family:copperplate,"Copperplate Gothic Light";
+}
+
+.back
+{
+	border:none;
+	background-color:none;
+}
+
+.backImg
+{
+	margin-left: 10px;
+	margin-top:5px;
+	width: 0.5%;
+}
+
+.div_form 
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: none;
+  padding: 20px;
+  margin: auto;
+  box-shadow: 0px 8px 15px 0px black;
+  border-radius: 20px;
+  
+}
+
+.label
+{
+	margin-left:35px;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+#bname
+{
+	display: block;
+	width: 90%;
+	margin: auto;
+}
+
+#author
+{
+	display: block;
+	width: 90%;
+	margin: auto;
+}
+
+#publisher
+{
+	display: block;
+	width: 90%;
+	margin: auto;
+}
+
+#category{
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	display: block;
+	width: 90%;
+	margin: auto;
+}
+
+#description
+{
+	display: block;
+	width: 90%;
+	margin: auto;
+	overflow:scroll;
+	height:200px;
+}
+
+
+.upload{
+	cursor:pointer;
+	margin-left:310px;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	background:#fff;
+	padding:5px;
+	border-radius:20px;
+}
+
+#output{
+	margin-left:270px;
+}
+
+
+.addbook {
+	background-color:#4267b2;
+	border-radius: 5px;
+	display:block;
+	cursor:pointer;
+	color:white;
+	font-family:Courier New;
+	font-size:15px;
+	padding:8px 50px;
+	border:none;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.addbook:hover {
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color:#0688fa;
+}
+
+.addbook:active {
+	position:relative;
+	top:1px;
+}
+
+.footer
+{
+	text-align: center;
+}

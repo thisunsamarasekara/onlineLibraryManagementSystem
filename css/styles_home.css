@@ -1,0 +1,163 @@
+/* latest */
+.latest{
+	background:white;
+	width:300px;
+	float:left;
+	margin-left:150px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);	
+	height:600px;
+	border-radius: 20px;
+	margin-bottom:100px;
+}
+
+
+.latest_title{
+	background-image: url("../images/bg.jpg");
+	color: white;
+	font-size:20px;
+	padding-left:8px;
+	padding-top:10px;
+	margin-top:0;
+	height:40px;
+	width:292px;
+}
+
+.latest_image{
+	height:250px;
+	width:180px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.recommenended{
+	background:white;
+	float:left;
+	margin-left:150px;
+	width:300px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	height:600px;
+	border-radius: 20px;
+	margin-bottom:50px;
+	
+}
+
+.recommenended_title{
+	background-image: url("../images/bg.jpg");
+	color: white;
+	font-size:20px;
+	padding-left:8px;
+	padding-top:10px;
+	height:40px;
+	width:292px;
+	margin-top:0;
+}
+
+
+
+.recommenended_image{
+	height:250px;
+	width:180px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.author{
+	background:white;
+	float:left;
+	margin-left:150px;
+	width:300px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	height:600px;
+	border-radius: 20px;
+	margin-bottom:50px;
+	
+}
+
+.author_title{
+	background-image: url("../images/bg.jpg");
+	color: white;
+	font-size:20px;
+	padding-left:8px;
+	padding-top:10px;
+	height:40px;
+	width:292px;
+	margin-top:0;
+}
+
+
+
+.author_image{
+	height:220px;
+	width:250px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*  media query for less than 1000 screen size  */
+@media only screen and (max-width:1000px){
+	.latest{
+		margin:auto;
+		margin-top:20px;
+		float:none;
+		 
+	}
+	.recommenended{
+		 margin:auto;
+		 margin-top:50px;
+		 float:none;
+	}
+	.author{
+		margin:auto;
+		margin-top:50px;
+		float:none;
+	}
+	
+}
+
+/* online status */
+.status{
+	margin-left:-10px;
+	margin-top:-125px;
+	position:absolute;
+	
+}
+
+.online{
+	padding:5px;
+	height:10px;
+	width:10px;
+	border:none;
+	border-radius:50px;
+	box-shadow: 0px 0px 8px #ccc;
+    background: green;
+    border-radius: 50%
+	
+}
+
+.offline{
+	margin-top:8px;
+	padding:4px;
+	height:3px;
+	width:3px;
+	border:none;
+	border-radius:50px;
+	box-shadow: 0px 0px 8px #ccc;
+    background: red;
+    border-radius: 50%
+	
+}
+.contactus{
+	float:left;
+	padding:15px;
+	color:#fff;
+	font-family:Lucida Console;
+}
+
+.contactus:visited {
+  color:#389393;
+}

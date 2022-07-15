@@ -1,0 +1,69 @@
+<!-- Created by P.M.J.I.Karunarathna IT20235192 -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<!--link recover styles sheet!-->
+<link rel="stylesheet" href="../css/recoverStyles.css">
+
+<!--link recover styles sheet!-->
+<link rel="stylesheet" href="../css/styles_footer.css">
+
+<!--link image logo!-->
+<link rel="icon" href="../images/logo_icon.png" type="image/x-icon">
+
+<title>Recover</title>
+
+<h1 class="headers">Forgot Password</h1>
+<meta name="viewpoint" content="width=device-width, intial-scale=1.0">
+
+</head>
+
+<body>
+<!--go back!-->
+<img src="../images/back.png" class="backImg" onclick="back()">
+<input type="button" value="Go back" class="back" onclick="back()">
+<br><br><br><br>
+
+<div class="div_form">
+
+<form method = "POST" action = "../php/recover.php">
+
+<!--heading!-->
+<h1 class="header1">Forgot Password?</h1>
+
+<!--E-mail!-->
+<label class="label" for="email">E-mail</label><br></br>
+<input type = "email" id = "email" name = "email" placeholder="Type your email..." pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+<br>
+
+<!--Password!-->
+<label class="label" for="pass">New Password</label><br></br>
+<input type = "password" id = "pass" name = "pass" placeholder="Password...">
+<br>
+	
+<!--confirm button!-->
+<button type="submit" value = "submit" name = "recover" id = "confirm">Confirm</button>
+<br>
+
+<p class="para">Didn't receive your password? Try again after 5 minutes.
+<br><br>
+
+</form>
+
+</div>
+<br><br><br><br>
+
+<!--link recover java script sheet!-->
+<script src="../js/recoverScript.js"></script>
+
+<!--copyright footer!-->
+<div class="footer">
+	<p  style = "padding-top:30px" class = "cpy">Copyright©2020</p>
+	<img src  = "../images/whatsapp_icon.png" class = "whatsapp_icon">
+	<img src  = "../images/facebook_icon.png" class = "facebook_icon">
+</div>
+
+</body>
+</html>
